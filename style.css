@@ -1,0 +1,113 @@
+@import url("https://rsms.me/inter/inter-ui.css");
+/* line 2, style.scss */
+body {
+  font-family: 'Inter UI', sans-serif;
+  background-color: #38383d; }
+
+/* line 6, style.scss */
+a {
+  text-decoration: none; }
+
+/* line 9, style.scss */
+#search-form {
+  margin-top: 2em;
+  text-align: center; }
+
+/* line 13, style.scss */
+#search-bar {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #f0f0f0;
+  width: 300px;
+  padding: 5px 0px 8px 0px;
+  min-width: 30%;
+  display: initial;
+  margin-left: 60px;
+  font-size: 1.2em;
+  outline: none;
+  color: #ececec;
+  margin: 0px; }
+
+/* line 27, style.scss */
+#searchbar:hover, #searchbar:active, #searchbar:focus {
+  box-shadow: 0px 5px 20px rgba(37, 37, 63, 0.3); }
+
+/* line 30, style.scss */
+#submit-button {
+  display: none; }
+
+/* line 31, style.scss */
+#link-section {
+  max-width: 70%;
+  width:1080px;
+  padding-top: 100px;
+  margin: auto;
+  text-align: center; }
+
+/* line 39, style.scss */
+.link-box-wrapper {
+position: relative;
+display: inline-block;
+margin: 5px 10px 20px 10px;
+width: 100px;
+border-radius: 8px;
+-webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+/* line 47, style.scss */
+.link-box-wrapper::after {
+content: "";
+border-radius: 8px;
+position: absolute;
+z-index: -1;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+box-shadow: 0 0.5px 5px rgba(255, 255, 255, 0.8);
+opacity: 0;
+-webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+  
+.link-box-wrapper:hover {
+    -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+
+.link-box-wrapper:hover::after {
+  opacity: 1;
+}
+
+/* line 50, style.scss */
+.link-box {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 2px;}
+
+/* line 56, style.scss */
+.box-image-wrapper {
+  height: 95px;
+  width: 100%;
+  text-align: center;
+  margin: auto; }
+
+/* line 62, style.scss */
+.link-box img {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px; }
+
+/* line 68, style.scss */
+.link-box .name {
+  position: relative;
+  font-size: 0.75em;
+  color: white;
+  width: 100%;
+  font-weight: 400;
+  text-align: center; 
+  text-overflow: ellipsis;}
